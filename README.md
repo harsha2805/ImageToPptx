@@ -1,4 +1,4 @@
-# png_to_pptx
+# img_to_pptx
 
 Convert all image files in a folder to a pptx files.
 
