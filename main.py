@@ -1,7 +1,5 @@
 # To avoid attribute errors if you are running a Python version above 3.9.6
 import collections.abc
-c = collections
-c.abc = collections.abc
 
 import tkinter.messagebox
 import os
