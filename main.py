@@ -12,16 +12,13 @@ from pptx import Presentation
 from pptx.util import Inches
 
 
-
 def choose_input_directory():
     input_directory = filedialog.askdirectory(title='Select Input Directory')
     input_directory_label.config(text=input_directory)
 
-
 def choose_output_directory():
     output_directory = filedialog.askdirectory(title='Select Output Directory')
     output_directory_label.config(text=output_directory)
-
 
 def convert_images_to_pptx():
     input_directory = input_directory_label['text']
@@ -33,9 +30,6 @@ def convert_images_to_pptx():
         os.makedirs(output_directory, exist_ok=True)
 
     dir_list = os.listdir(input_directory)
-
-# Get the number of files
-    a = len(dir_list)
 
 # Convert png to slides
     for filename in dir_list:
@@ -61,7 +55,6 @@ def convert_images_to_pptx():
     # Show a message box to notify the user that the conversion is finished
     tkinter.messagebox.showinfo(
         "Conversion finished", "The conversion is finished")
-
 
 root = tk.Tk()
 root.title('Convert Images to PowerPoint')
