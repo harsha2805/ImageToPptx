@@ -9,3 +9,5 @@ Dependencies:
   
 To install python-pptx library in Windows,Linux and macOS:
          pip install python-pptx
+
+For more information or to clear up any doubts, visit " www.webdevelopmentscripts.com "
